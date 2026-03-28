@@ -17,7 +17,7 @@ body {
 }
 
 .navbar {
-    background-color: rgba(159, 104, 49, 0.89);
+    background-color: rgb(111, 78, 55);
     border: 8px solid #000000;
     border-radius: 10px;
     margin: 30px auto;
@@ -31,6 +31,7 @@ body {
     justify-content: center;
 
     font-size: large;
+    color: white;
 }
 
 
