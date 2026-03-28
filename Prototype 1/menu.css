@@ -1,37 +1,46 @@
-
 .beverages-section {
     display: flex;
-    gap: 60px;
+    gap: 100px; /* Space between the column and the image */
     align-items: flex-start;
     justify-content: center;
     margin-bottom: 40px;
 }
 
 .item-column {
-    flex: 1;
-    margin-left: 400px;
+    width: 250px;
+    margin: 24px 0 40px 0;
+    padding: 4px 20px 4px 20px; /* changes the bevs paddings */
+    background-color: #3d2b1f;
+    border-radius: 16px;
+    color: #fff;
 }
 
 .item-column h2 {
-    font-size: 40px;
+    font-size: 55px;
+    margin-top: 18px;
     margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
 }
 
 .drinks {
     display: flex;
     background-color: #bea08a;
-    padding: 20px 30px;
-    width: fit-content;
-    border-radius: 250px;
-    gap: 20px;
+    padding: 12px 28px;
+    width: 200px;
+    min-width: 120px;
+    border-radius: 999px;
+    gap: 0;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 15px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto 15px;
 }
 
 .drinks h3 {
     margin: 0;
-    font-size: 25px;
+    font-size: 35px;
+    width: 100%;
 }
 
 .image-container {
@@ -43,8 +52,7 @@
 .drinkImage {
     height: 360px;
     width: auto;
-    margin-right: 650px;
-    margin-top: 120px;
+    margin: 87px 0 0;
     border-radius: 30px;
     border: 8px solid #000000;
 }

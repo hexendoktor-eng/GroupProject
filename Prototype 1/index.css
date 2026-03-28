@@ -26,10 +26,11 @@ body {
 }
 
 .navbar {
-    background-color: #f4f0eb;
+    background-color: rgba(159, 104, 49, 0.89);
+    border: 8px solid #000000;
     border-radius: 10px;
-    margin: 0 auto;
-    width: 70%;
+    margin: 30px auto;
+    width: 1100px;
 
 
 
