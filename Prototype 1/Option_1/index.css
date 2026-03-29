@@ -1,12 +1,14 @@
 html {
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-image: url("images/safwan-thottoli-QFQ6vsou7XA-unsplash.jpg");
+    overflow-x: hidden;
+    background-image: url("../images/safwan-thottoli-QFQ6vsou7XA-unsplash.jpg");
     background-size: contain;
     background-attachment: fixed;
     background-position: center;
@@ -14,6 +16,13 @@ body {
 
 .main {
     min-height: 100%;
+    width: 100%;
+    max-width: 85%;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px auto 0 auto;;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .navbar {
@@ -33,7 +42,6 @@ body {
     font-size: large;
     color: white;
 }
-
 
 header {
     text-align: center;
@@ -65,4 +73,3 @@ nav a {
     padding: 15px 20px;
     display: block;
 }
-
