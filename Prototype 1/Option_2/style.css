@@ -82,3 +82,29 @@ footer {
     padding: 15px;
     margin-top: 20px;
 }
+#flexContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contact > .contactForm {
+    border: 1px #6f4e37 solid;
+    padding: 12px;
+    gap: 20px;
+    text-align: center;
+}
+.contactForm p {
+    margin-top: 10px;
+}
+
+#flexContact > #contact2 {
+    flex-direction: column;
+    border: black solid 1px;
+    padding: 10px;
+    text-align: center;
+}
