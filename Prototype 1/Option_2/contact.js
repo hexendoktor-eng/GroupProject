@@ -39,3 +39,24 @@ if ((fNameSuccess === true) || (lNameSuccess === true)) {
     successMessageArea.style.display = "block";
 
 }
+
+
+const contactForm = document.querySelector(".contactForm");
+
+contactForm.addEventListener("submit", function(event) {
+    const firstName = firstNameInput.value;
+    const lastName = lastNameInput.value;
+
+    if (firstName.trim() === "" || lastName.trim() === "") {
+        event.preventDefault();
+        alert("Error");
+        return;
+    }
+
+    const userConfirmed = confirm(`Do you want to submit your name? \n ${firstName}\n ${lastName}`);
+
+    if (!userConfirmed) {
+        event.preventDefault();
+    }
+});
+
