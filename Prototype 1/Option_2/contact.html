@@ -9,7 +9,7 @@
 <body>
 <!-- Navigation bar-->
 <header>
-    <h1>We Like Coffee Shop</h1>
+    <a href="index.html"><h1 style="color: white">We Like Coffee Shop</h1></a>
     <nav>
         <a href="menu.html">Menu</a>
         <a href="about.html">About</a>
@@ -19,11 +19,36 @@
 </header>
 <!-- Navigation bar end-->
 <main>
-    <section id="contact" style="margin-top: 40px;">
-        <h2>Contact</h2>
+    <div id="flexContact">
+        <p style="font: 25px sans-serif;"><b>If you would like to contact us please put your name below!</b></p>
+        <section id="contact">
+        <!--- Form for Name and Last Name start -->
+            <form class="contactForm">
+                <div style="margin-bottom: 15px;">
+                    <label for="fname">First Name</label><br>
+                    <input type="text" id="fname" name="firstname" placeholder="Please enter your first name"
+                           style="text-align: center; font-size: large;">
+                    <p id="error-message" style="color: red; margin: 5px 0 0 0;"></p>
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" id="lname" name="lastname" placeholder="Please enter your last name"
+                           style="text-align: center; font-size: large;">
+                    <p id="error-message2" style="color: red; margin: 5px 0 0 0;"></p>
+                </div>
+
+                <button type="submit" style="border-style: solid">Submit</button>
+            </form>
+        <script src="contact.js"></script>
+            <!--- Form for Name and Last Name end-->
+    </section>
+    <section id="contact2" style="margin-top: 40px; font-size: 30px;">
+        <h2><u>Contact</u></h2>
         <p>Email: welikecoffee@coffee.com</p>
         <p>Phone: +123 456 7890</p>
     </section>
+     </div>
 </main>
 <footer>
     &copy; 2026 Cozy Coffee Shop. All rights reserved.
