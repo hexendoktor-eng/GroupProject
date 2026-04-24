@@ -11,7 +11,7 @@ function checkoutTotal() {
     const totalCell = document.querySelector('#cartTable tr:last-child td:Last-child');
     totalCell.textContent = '$' + total.toFixed(2);
     try {
-        if (total = 0) {
+        if (total === 0) {
             alert("Please add items to your cart");
         }
     }
