@@ -11,10 +11,11 @@ body {
 }
 
 header {
-    background-color: #6f4e37;
+    background-color: #163f60;
     color: white;
     padding: 20px;
     text-align: center;
+    border-bottom: 35px ridge #c99047;
 }
 
 header h1 {
@@ -80,7 +81,8 @@ main {
 }
 
 footer {
-    background-color: #6f4e37;
+    background-color: #163f60;
+    border-top: 15px ridge #c99047;
     color: white;
     text-align: center;
     padding: 15px;
@@ -128,4 +130,7 @@ footer {
     border: black solid 1px;
     padding: 10px;
     text-align: center;
+}
+#checkOut {
+
 }
