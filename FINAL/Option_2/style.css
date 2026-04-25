@@ -131,6 +131,28 @@ footer {
     padding: 10px;
     text-align: center;
 }
-#checkOut {
+#cartTable td {
+    font-weight: bold;
+    font-size: 1.4em;
+    color : #c78f46;
 
+
+    border-block: 5px solid #bea08a;
+    padding: 10px;
+    background-color: rgb(22, 63, 95);
+
+
+
+
+}
+
+#checkoutButton {
+    background-color: #c99047 !important;
+    color: white !important;
+    border: 3px solid #000000 !important;
+    font-size: 20px !important;
+    padding: 10px 20px !important;
+    cursor: pointer !important;
+    border-radius: 10px !important;
+    font-weight: bold !important;
 }

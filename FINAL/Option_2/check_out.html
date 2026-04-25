@@ -18,23 +18,22 @@
     </nav>
 </header>
 <!-- Navigation bar end-->
-<main>
+<main style="text-align: center;">
     <h2><u>Shopping Cart</u></h2>
-<div id="checkout" style="display: flex; justify-content: center; align-items: center;
-    border-style: solid; border-radius: 10px;">
-    <table id="cartTable">
-        <tr>
+<div id="checkout" style="text-align: center;">
+    <table id="cartTable" style="border: #000000 7px solid; border-collapse: collapse; width: 700px; text-align: center; margin: 10px auto;">
+        <tr style="border: #ffffff 6px solid; border-collapse: collapse; text-align: center; font-size: 42px;">
             <th>Item</th>
             <th>Price</th>
             <th>Quantity</th>
-            <th>Total</th>
         </tr>
         <tr>
+
             <td>Espresso</td>
             <td>$1.50</td>
             <td>
                 <label>
-                <input type="number" value="0" min="0" max="10">
+                <input type="number" value="0" min="0" max="10" style="scale: 1.4;">
                 </label>
             </td>
         </tr>
@@ -42,40 +41,41 @@
             <td>Latte</td>
             <td>$4.00</td>
             <td><label>
-                <input type="number" value="0" min="0" max="10">
+                <input type="number" value="0" min="0" max="10" style="scale: 1.4;">
             </label></td>
         </tr>
         <tr>
             <td>Breakfast</td>
             <td>$5.00</td>
             <td><label>
-                <input type="number" value="0" min="0" max="10">
+                <input type="number" value="0" min="0" max="10" style="scale: 1.4;">
             </label></td>
         </tr>
         <tr>
             <td>Croissant</td>
             <td>$2.50</td>
             <td><label>
-                <input type="number" value="0" min="0" max="10">
+                <input type="number" value="0" min="0" max="10" style="scale: 1.4;">
             </label></td>
         </tr>
         <tr>
             <td>Tea</td>
             <td>$3.00</td>
             <td><label>
-                <input type="number" value="0" min="0" max="10">
+                <input type="number" value="0" min="0" max="10" style="scale: 1.4;">
             </label></td>
         </tr>
         <tr>
             <td>Smoothie</td>
             <td>$6.00</td>
             <td><label>
-                <input type="number" value="0" min="0" max="10">
+                <input type="number" value="0" min="0" max="10" style="scale: 1.4;">
             </label></td>
         </tr>
         <tr>
-            <td colspan="3">Total</td>
+            <td>Total</td>
             <td id="totalCell">$0.00</td>
+            <td><button id="checkoutButton">Checkout</button></td>
         </tr>
 
     </table>

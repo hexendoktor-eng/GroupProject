@@ -8,15 +8,8 @@ function checkoutTotal() {
     });
     // adds the total of the items in the cart
 
-    const totalCell = document.querySelector('#cartTable tr:last-child td:Last-child');
+    const totalCell = document.querySelector('#totalCell');
     totalCell.textContent = '$' + total.toFixed(2);
-    try {
-        if (total === 0) {
-            alert("Please add items to your cart");
-        }
-    }
-    catch (error) {
-        console.log(error);
-    }
+
 
 }
