@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>We like Coffee Shop</title>
+    <title>Café de Rêve</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,7 +19,7 @@
 </header>
 <!-- Navigation bar end-->
 <main style="text-align: center;">
-    <h2><u>Shopping Cart</u></h2>
+    <h2 style="font-weight: bold; font-size: 100px">Shopping Cart</h2>
 <div id="checkout" style="text-align: center;">
     <table id="cartTable" style="border: #000000 7px solid; border-collapse: collapse; width: 700px; text-align: center; margin: 10px auto;">
         <tr style="border: #ffffff 6px solid; border-collapse: collapse; text-align: center; font-size: 42px;">
@@ -75,13 +75,14 @@
         <tr>
             <td>Total</td>
             <td id="totalCell">$0.00</td>
-            <td><button id="checkoutButton">Checkout</button></td>
+            <td><button onclick="reloadCheckout()" id="checkoutButton">Checkout</button></td>
         </tr>
 
     </table>
 </div>
 </main>
 <script src="checkout.js"></script>
+
 <script>
     document.querySelectorAll('#cartTable input[type="number"]').forEach(input => {
         input.addEventListener('change', checkoutTotal);

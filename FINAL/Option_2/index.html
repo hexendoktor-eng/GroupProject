@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>We like Coffee Shop</title>
+    <title>Café de Rêve</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
 </head>
@@ -20,9 +20,28 @@
 </header>
 <!-- Navigation bar end-->
 
-<div class="image-container">
-    <img class="drinkImage" height="260" src="../images/photo-1447933601403-0c6688de566e.jpg" alt="Coffee Image">
-</div>
+<h1 style="text-align: center; font-size: 50px; padding-top: 10px;"> Welcome!
+</h1>
+<!-- This should be where local storage saves name from contact form -->
+<!-- Have contact form send user to index.html -->
+<p id="user" style="font-size: 70px; text-align: center; font-weight: bolder"></p>
+
+<!-- Script to display name from local storage -->
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  try {
+    const first = localStorage.getItem('firstName');
+    const last = localStorage.getItem('lastName');
+    const userEl = document.getElementById('user');
+    if (userEl && first && last) {
+      userEl.textContent = first + ' ' + last;
+    }
+  } catch (e) {
+    // localStorage is unavailable
+  }
+});
+</script>
 
     <footer>
         &copy; 2026 Café de Rêve. All rights reserved.

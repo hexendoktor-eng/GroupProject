@@ -47,9 +47,15 @@ contactForm.addEventListener("submit", function(event) {
     const firstName = firstNameInput.value;
     const lastName = lastNameInput.value;
 
-    if (firstName.trim() === "" || lastName.trim() === "") {
+    // validation - no digits in the name
+    if (
+        firstName.trim() === "" ||
+        lastName.trim() === "" ||
+        /\d/.test(firstName) ||
+        /\d/.test(lastName)
+    ) {
         event.preventDefault();
-        alert("Error");
+        alert("Please enter valid names (no numbers) for both fields.");
         return;
     }
 
@@ -57,6 +63,21 @@ contactForm.addEventListener("submit", function(event) {
 
     if (!userConfirmed) {
         event.preventDefault();
+        return;
     }
+
+    // store successful entries in localStorage
+    try {
+        localStorage.setItem("firstName", firstName.trim());
+        localStorage.setItem("lastName", lastName.trim());
+    } catch (e) {
+        //fails
+        console.warn("Unable to access localStorage:", e);
+    }
+
+    // redirect to home page to display the saved name
+    event.preventDefault();
+    window.location.href = "index.html";
 });
+
 
